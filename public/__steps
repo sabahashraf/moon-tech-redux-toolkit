@@ -1,0 +1,72 @@
+/*
+1.npm install @reduxjs/toolkit react-redux for existing project
+2.src-->app-->store.js
+3.app.js e store k provider die pass korlam
+3.features-->cart-->cartSlice.js
+4.features-->filter-->filterSlice.js
+5.cartSlice.js initialsetup korlam..pore reducer likhbo,
+6.same for filterSlice
+7.export kore store e reducers add korlam
+8.addToCart functionality then dispatch on productacard;
+9.page-->cart.js e cart product show korlam
+10.quantity handke korlam..remove func handle korlam
+11.filter reducer likhe home js e dispatch korlam
+12.filter onujae ui set korte hob
+13.createAsyncThunk er first parameter e jei function dispatch korbo sheta dite hob..2nd parameter e akta anonymous async function pabo  jekhane asynchronous kajgula kora jy
+14.getproducts ta holo jeta amra dispatch korbo..extraReducers er upor vikti kore kichu jinish die
+15.search extraReducers
+16.extraReducers builder dei..akta callback function er vitor dei
+17.builder use korle amra case add korte pari.
+
+13.akhon middleware likhte hob
+14.getDefaultmiddleware searvch dite hob
+15.store.js e middleware add korte hob
+16.redux toolkit by default thunk k include kore di
+17.features-->products-->productsSlice.js
+18.createAsyncThunk er casegula builder parameter die handle korte hob..ty extraReducers nite hob
+19.createAsyncThunk banabo getproducts er jonno
+20.see documentation
+21.arpor case likhar por home e dispatch korbo.
+22.oneke API-->productsAPI nie tate fetching part kore;
+23.create productsAPI.js
+24.under that took the async function and export
+25.axios install korlam
+26.instance banalama
+27.src-->utils-->axios.config.js
+28.productsAPI te axios import kore use korlam
+29.data.data.data
+30.production level e baseURL change hobe ty .env.local akta file banalam
+31.switch statement likhe post function likhlam
+32.addProduct e gie dispatch korte hob
+33.react-hot-toast use korbo 
+34.addProduct e useSelector die isLoading,is error,post success agula toast die handle korlam
+35.agula side effect ty use Effect die handle korlam
+36.react hook form use korar jonno reset pabo
+37.akhon akta problem holo add product korar por back to home button e press kore home e gele amra new products dekhte pai..kintu abar add product page visit korle first ei "product added " toast ashe..ar karon  amra bolchi if(!isLoading && postSucces)  show that toast.case fulfilled howar por postSucces false kora hoy ny.now to handle this manually..we will write reducer in productsSlice
+38.then dispatch togglePostSuccess in add products
+39.delete product korar jonno age productList component e home er moto refractor kore feli;
+40.delete product banalam (productlist,productapi,productslice)
+41.delete korar por reload na marle product remove hochche na ui theke
+42.karon server theke remove hochche..localstate theke remove hochche na until reload
+43.age amra localstate theke delete korar jonno reducer likhtam akhon age ty korbo..removeFromList
+44.atake kothae dispatch korbo?valo hoy jokhon server theke delete hob tokhon dispatch korbo...ajonno second parameter hishabe thunkAPI die dei.jar modhdhe amra dispatch pai..oi dispatch die removeFromList korbo
+45.ai porjontoi thaklo ai moduleta..ar por rtk query dekhbo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
